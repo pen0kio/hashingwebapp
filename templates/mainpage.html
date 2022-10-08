@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://img.icons8.com/external-sketchy-juicy-fish/60/000000/external-cryptography-cryptography-sketchy-sketchy-juicy-fish-3.png"
+        type="image/x-icon">
+    <title>Python Hasher</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(https://wallpaperaccess.com/full/4070409.jpg);
+            background-size: 100%;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Montserrat", sans-serif;
+            background-color: #ecf0f3;
+            color: #a0a5a8;
+        }
+
+        .main {
+            margin-top: 2rem;
+            position: absolute;
+            width: 80%;
+            padding: 25px;
+            background-color: #ecf0f3;
+            box-shadow: 10px 10px 10px #d1d9e6, -10px -10px 10px #f9f9f9;
+            border-radius: 12px;
+            overflow: hidden;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .button {
+            width: 180px;
+            height: 50px;
+            border-radius: 25px;
+            margin-top: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1.15px;
+            background-color: #4B70E2;
+            color: #f9f9f9;
+            box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <center>
+            <h1>Python Hasher</h1>
+        </center>
+        <div class="container">You can crack and create md5, sha1, sha224, sha256 and sha512 hashes easily. This website
+            uses rockyou.txt wordlist to decrpyt the hases.</div>
+        <center>
+            <a href="{{ url_for('encrypt') }}"><button class="button">ENCRYPT</button></a>
+            <a href="{{ url_for('decrypt') }}"><button class="button">DECRYPT</button></a>
+        </center>
+    </div>
+</body>
+
+</html>
